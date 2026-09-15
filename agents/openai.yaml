@@ -1,0 +1,4 @@
+interface:
+  display_name: "荔枝｜经验产品化起步助手"
+  short_description: "通过逐步提问盘点经验、筛选细分方向并形成可验证的产品构想"
+  default_prompt: "请使用 $liz-experience-product-coach 帮我盘点真实经验，找到适合起步的细分方向，每轮只问一个主问题。"

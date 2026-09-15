@@ -6,9 +6,9 @@
 
 在支持技能安装的 Agent 中直接发送：
 
-> 请从这个 GitHub 仓库下载并安装 liz-experience-product-coach 技能：https://github.com/wuhuili2014/productize-me。技能位于仓库根目录，请保留 SKILL.md、references 和 agents 的目录结构，并安装到当前工具的用户技能目录。
+> 帮我安装这个 skill：https://github.com/wuhuili2014/productize-me
 
-安装能力取决于具体 Agent 是否支持读取 GitHub 和本地技能。不要只发送“帮我下载这个 skill”，需要同时提供仓库链接。无需登录飞书或配置其他连接器。
+安装能力取决于具体 Agent 是否支持读取 GitHub 和本地技能。无需登录飞书或配置其他连接器。
 
 ## 开始使用
 

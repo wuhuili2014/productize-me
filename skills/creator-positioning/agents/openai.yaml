@@ -1,0 +1,4 @@
+interface:
+  display_name: "个人内容定位助手"
+  short_description: "结合已有定位、真实实践与受众需求，明确个人内容方向和持续栏目"
+  default_prompt: "请使用 $creator-positioning 诊断我的现有定位，结合真实材料给出调整理由、简介与持续栏目。"

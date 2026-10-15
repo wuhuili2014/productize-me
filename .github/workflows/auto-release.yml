@@ -47,7 +47,7 @@ jobs:
           - Source commit: ${SOURCE_COMMIT}
           - Repository: https://github.com/wuhuili2014/productize-me
 
-          用户验证时，请让 Agent 同时读取 GitHub 当前的本文件和本地已安装目录中的本文件；只有 Version 与 Source commit 都一致，才表示更新成功。
+          当用户要求更新本 Skill 时，Agent 应在后台比较 GitHub 与本地的 Version 和 Source commit。两者一致后，只需向用户回复“已更新到 <Version>”；如果仍不一致，回复“更新未成功”，不要用术语增加用户负担。
           EOF
 
       - name: Commit version proof and create tag

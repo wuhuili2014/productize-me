@@ -50,17 +50,23 @@
 
 如果以前安装过，希望更新到最新版，发送：
 
-> 请把我已经安装的这个 skill 更新到最新版，覆盖旧版本：https://github.com/wuhuili2014/productize-me
+> 请从 https://github.com/wuhuili2014/productize-me 的 main 分支重新拉取并覆盖我本地已安装的 `liz-experience-product-coach`，不要只根据缓存或“已是最新”的提示判断。更新后，分别读取 GitHub 当前的 `VERSION.md` 和本地已安装目录中的 `VERSION.md`，返回两边的 Version、Source commit，以及“版本一致，更新成功”或“版本不一致，更新未生效”。
 
 安装完成后，通常从下一轮对话开始使用。安装能力取决于具体 Agent 是否支持从 GitHub 安装 skill。
 
 ### 如何确认真的更新成功
 
-每次本仓库更新后，GitHub 会自动生成版本号和安装包，你不需要手动命名版本。更新完成后，新建一个对话并发送：
+每次本仓库更新后，GitHub 会自动生成版本号，你不需要手动命名，也不需要下载文件。上面的更新口令已经同时包含更新和验证：Agent 应当返回 GitHub 与本地两组信息，并给出明确结论，例如：
 
-> 请直接读取本地已安装的 `liz-experience-product-coach/VERSION.md`，告诉我 Version 和 Source commit。不要根据市场页面、更新提示或对话记忆回答。
+> GitHub 最新版本：v2026.10.15.2
+>
+> 本地安装版本：v2026.10.15.2
+>
+> Source commit：两边一致
+>
+> 结论：版本一致，更新成功
 
-将 Agent 返回的 Version 与 [GitHub 最新版本](https://github.com/wuhuili2014/productize-me/releases/latest) 对照；两边相同，才表示实际安装的是最新版。如果 WorkBuddy 提示“已经是最新”但版本不同，请卸载旧版，再使用最新 Release 中的 `liz-experience-product-coach.zip` 重新安装，并新建对话验证。
+只有 Version 和 Source commit 两项都一致，才算真正更新成功。如果 WorkBuddy 提示“已经是最新”，但两边信息不同，就表示它实际没有拉到最新版；不要接受“已是最新”作为验证结果，让 Agent 再重新拉取并覆盖一次。如果仍不一致，Agent 应明确返回“更新未生效”，不要误报成功。
 
 ## 如何开始使用
 

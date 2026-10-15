@@ -54,6 +54,14 @@
 
 安装完成后，通常从下一轮对话开始使用。安装能力取决于具体 Agent 是否支持从 GitHub 安装 skill。
 
+### 如何确认真的更新成功
+
+每次本仓库更新后，GitHub 会自动生成版本号和安装包，你不需要手动命名版本。更新完成后，新建一个对话并发送：
+
+> 请直接读取本地已安装的 `liz-experience-product-coach/VERSION.md`，告诉我 Version 和 Source commit。不要根据市场页面、更新提示或对话记忆回答。
+
+将 Agent 返回的 Version 与 [GitHub 最新版本](https://github.com/wuhuili2014/productize-me/releases/latest) 对照；两边相同，才表示实际安装的是最新版。如果 WorkBuddy 提示“已经是最新”但版本不同，请卸载旧版，再使用最新 Release 中的 `liz-experience-product-coach.zip` 重新安装，并新建对话验证。
+
 ## 如何开始使用
 
 安装完成后，可以直接对 Agent 说：

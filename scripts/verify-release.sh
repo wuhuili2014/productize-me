@@ -76,6 +76,16 @@ for relative, markers in checks.items():
         if marker not in text:
             raise SystemExit(f"校验失败：{relative} 缺少关键内容：{marker}")
 
+report_html = (root / "assets/report-example.html").read_text(encoding="utf-8")
+layout_markers = [
+    ".steps{display:grid;grid-template-columns:repeat(4,1fr)",
+    ".steps{grid-template-columns:1fr 1fr}",
+    ".steps{grid-template-columns:1fr}",
+]
+layout_positions = [report_html.find(marker) for marker in layout_markers]
+if -1 in layout_positions or layout_positions != sorted(layout_positions):
+    raise SystemExit("校验失败：四步卡的桌面、窄屏和手机样式缺失或顺序错误")
+
 for relative in required_files + ["README.md"]:
     path = root / relative
     if path.exists() and "经验产品化起步助手" in path.read_text(encoding="utf-8"):
@@ -84,7 +94,7 @@ for relative in required_files + ["README.md"]:
 class ReportParser(HTMLParser):
     pass
 
-ReportParser().feed((root / "assets/report-example.html").read_text(encoding="utf-8"))
+ReportParser().feed(report_html)
 print(f"内容防回退校验通过：{sys.argv[1]}")
 PY
 

@@ -59,6 +59,7 @@ jobs:
           ## 本次更新
 
           $(cat release-items.md)
+
           **发布时间：** ${RELEASED_AT}<br>
           **对应提交：** ${SOURCE_COMMIT}
           EOF

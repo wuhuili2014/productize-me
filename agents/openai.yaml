@@ -1,4 +1,4 @@
 interface:
-  display_name: "荔枝｜经验产品化起步助手"
+  display_name: "荔枝｜经验产品化起步教练"
   short_description: "通过逐步提问提炼可复用经验，形成符合个人意愿的产品起步方案与验证动作"
   default_prompt: "请使用 $liz-experience-product-coach 帮我盘点真实经验，形成我愿意尝试的第一版产品构想和验证动作，每轮只问一个主问题。"

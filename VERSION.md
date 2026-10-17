@@ -1,8 +1,8 @@
 # Skill 版本证明
 
-- Version: v2026.10.17.4
-- Released: 2026-10-17 11:46:21 CST
-- Source commit: 14285433f4317e14351e60e95a666cf509339572
+- Version: v2026.10.17.5
+- Released: 2026-10-17 11:47:39 CST
+- Source commit: d786d907a60125e67d8c331d593c48e4cbc3d9c4
 - Repository: https://github.com/wuhuili2014/productize-me
 
 当用户要求更新本 Skill 时，Agent 应在后台比较 GitHub 与本地的 Version 和 Source commit。两者一致后，只需向用户回复“已更新到 <Version>”；如果仍不一致，回复“更新未成功”，不要用术语增加用户负担。

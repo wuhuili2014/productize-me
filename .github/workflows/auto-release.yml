@@ -50,6 +50,7 @@ jobs:
           fi
 
           git log --reverse --format='- **%s**%n%b%n' "$range" > release-items.md
+          perl -0pi -e 's/\\n/\n/g' release-items.md
           if [ ! -s release-items.md ]; then
             echo '- 完成本次 Skill 更新。' > release-items.md
           fi

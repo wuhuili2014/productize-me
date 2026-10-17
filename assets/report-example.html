@@ -36,22 +36,105 @@
 .cta-proof{margin-top:8px!important;font-weight:600;color:#435963!important}
 
 @media print{.toolbar{display:none}}
+
+.next-path{margin-top:28px;padding:25px 27px;background:#eaf0f2;break-inside:avoid}
+.next-path-head{margin-bottom:16px}.next-path-head .kicker{font-size:11px;font-weight:700;letter-spacing:.06em}
+.next-path-head h3{font-size:21px;line-height:1.45;margin:7px 0 8px;color:#2f414a}
+.next-path-head p{font-size:12px;line-height:1.78;color:#596d77;margin:0;max-width:720px}
+.path-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:12px}
+.path-primary,.path-secondary{background:#fff;border:1px solid #cbd9de;padding:18px 20px}
+.path-primary{border-top:4px solid #d56c58}.path-secondary{border-top:4px solid #718791}
+.path-label{font-size:11px;font-weight:700;color:#b75948;margin-bottom:7px}.path-secondary .path-label{color:#526d79}
+.path-primary h4,.path-secondary h4{font-size:15px;line-height:1.5;margin:0 0 7px;color:#2f414a}
+.path-primary p,.path-secondary p{font-size:11.5px;line-height:1.72;color:#596d77;margin:0}
+.column-link{display:inline-block;margin-top:13px;padding:8px 12px;background:#d56c58;color:#fff;text-decoration:none;font-size:11.5px;font-weight:700}
+.consult-entry{margin-top:12px;padding-top:10px;border-top:1px solid #d8e1e5;font-size:10.5px;color:#657983}
+.consult-entry strong{display:block;margin-top:3px;font:21px Georgia;color:#2f414a}
+@media(max-width:700px){.path-grid{grid-template-columns:1fr}.next-path{padding:20px}}
+@media print{.next-path{break-inside:avoid}}
+
+
+/* 统一视觉原则：先用层级和留白，再使用单一强调信号 */
+.summary{display:block;border-left:0}
+.summary-side{display:none}
+.summary .kicker{display:inline-block;background:#d56c58;color:#fff;padding:6px 10px;font-size:11.5px;font-weight:700;letter-spacing:.05em}
+.decision small{font-size:11.5px;font-weight:700;color:#b75948;margin-bottom:8px;padding-left:0;border-left:0;letter-spacing:.03em}
+.group-head{display:flex;align-items:center;gap:0;margin:38px 0 -8px;padding:0 0 10px;color:#b75948}
+.group-head:after{content:"";height:1px;background:#d9e1e4;flex:1;margin-left:4px}
+.group-index{color:#d56c58;font:750 21px/1 "PingFang SC","Microsoft YaHei",sans-serif}
+.group-title{font-size:21px;font-weight:750;letter-spacing:.04em}
+.group-desc{font-size:10.5px;color:#87969d;margin-left:10px}
+.section h2{font-size:17px}
+.section-head{gap:10px}
+.num{width:auto;min-width:0;height:auto;justify-content:flex-start;background:transparent;color:#526b77;border:0;border-radius:0;font-family:inherit;font-size:17px;line-height:1;font-weight:500}
+.en{display:none}
+.include,.go{background:#edf3f6;border-left:3px solid #6d8792}
+.exclude,.adjust{background:#f6efed;border-left:3px solid #d0705d}
+.assets{gap:0;border:1px solid #d8e1e5;background:#fff}
+.asset{box-shadow:none;border:0;border-bottom:1px solid #dfe7ea;padding:15px 17px}
+.asset:nth-child(odd){border-right:1px solid #dfe7ea}
+.asset:nth-last-child(-n+2){border-bottom:0}
+.asset small{color:#b75948;font-weight:650}
+.chosen td{background:#f8eeeb}
+.chosen td:first-child{border-left:0}
+.tag{background:#d56c58;color:#fff;font-weight:700;padding:5px 8px}
+.choice-note{padding:8px 2px 0;background:transparent;border:0;color:#718089;font-size:10.5px}
+.choice-note b{color:#65747c;font-weight:600}
+.mini-grid{break-inside:avoid}
+.copy-note{display:inline-block;margin-left:8px;padding-left:8px;border-left:1px solid #81939b;color:#cbd6da;font-size:10px}
+.first-step-section{margin-top:24px;padding-top:3px}
+.takeaway{margin-top:0;padding:0;background:transparent;border:0}
+.takeaway small{display:inline-flex;align-items:center;background:#d56c58;color:#fff;padding:6px 11px;font-size:12.5px;font-weight:750;letter-spacing:.04em;margin-bottom:11px}
+.takeaway b{display:block;font-size:18.5px;line-height:1.5;color:#2f414a}
+.takeaway p{font-size:11.5px;line-height:1.72;color:#596d77;margin:6px 0 0}
+.next-path{margin-top:22px;padding:17px 0 0;background:transparent;border-top:1px solid #d7e1e5;break-inside:avoid}
+.next-path-head{margin-bottom:11px}
+.next-path-head .kicker{font-size:9.5px;font-weight:600;letter-spacing:.04em;color:#788991}
+.next-path-head h3{font-size:14.5px;line-height:1.48;margin:4px 0 0;color:#52636b;font-weight:600}
+.next-path-head p{display:none}
+.path-grid{grid-template-columns:1.45fr .75fr;gap:10px}
+.path-primary,.path-secondary{border:1px solid #dce4e7;padding:13px 15px}
+.path-primary{background:#eef4f6;border-color:#cbdbe1;border-top:1px solid #cbdbe1}
+.path-secondary{background:#fafafa;border-top:1px solid #dce4e7}
+.path-label{font-size:9.5px;font-weight:700;color:#b45d4d;margin-bottom:5px}
+.path-secondary .path-label{color:#78878e;font-weight:600}
+.path-primary h4,.path-secondary h4{font-size:13.5px;line-height:1.5;margin:0 0 5px}
+.path-primary p,.path-secondary p{font-size:10.5px;line-height:1.65}
+.chapter-list{display:grid;gap:4px;margin-top:9px;padding-top:8px;border-top:1px solid #dce4e7}.chapter-list a{font-size:9.8px;line-height:1.5;color:#405b67;text-decoration:none}.chapter-list a:before{content:"→ ";color:#7d9099;font-weight:700}.column-link{margin-top:10px;padding:6px 9px;background:#fff;border:1px solid #bfcdd2;color:#526a75;font-size:10.5px}
+.consult-entry{margin-top:9px;padding-top:8px;border-top:1px solid #dce4e7;font-size:9.5px}
+.consult-entry strong{font-size:18px}
+@media(max-width:700px){.group-desc{display:none}.path-grid{grid-template-columns:1fr}}
 </style></head><body><div class="toolbar"><a class="download" download="经验产品化方向报告.pdf" href="%E7%BB%8F%E9%AA%8C%E4%BA%A7%E5%93%81%E5%8C%96%E6%96%B9%E5%90%91%E6%8A%A5%E5%91%8A.pdf">保存为 PDF</a></div><main class="report"><header class="header"><div class="top"><span>LIZ · EXPERIENCE TO PRODUCT</span><span class="edition">示例 · 视觉与结构模板</span></div><h1>把你的经验链路，<br>做成第一个产品。</h1><div class="subtitle">经验产品化方向报告 · 从「我会什么」到「先验证什么」</div><div class="meta"><span>示例画像：5 年内容运营经验 · 每周可投入 4 小时</span><span>基于示例对话生成</span></div></header>
-<div class="summary"><div class="summary-main"><div class="kicker">本轮核心结论</div><h2>先把内容协作经验，做成一份小团队工作流指南</h2><p>优先方向是“小团队内容工作流”。示例用户最值得出售的，不是泛泛的运营知识，而是把反复实践过的选题、排期和复盘方法，整理成一个足够小、可以验证的产品。</p></div><div class="summary-side"><small>当前最关键的验证</small><strong>用户是否愿意为解决协作混乱付费</strong><span>以及一份轻量指南，能否真正帮助团队完成一周协作。</span></div></div>
+<div class="summary"><div class="summary-main"><div class="kicker">本轮核心结论</div><h2>先把内容协作经验，做成一份小团队工作流指南</h2><p>优先方向是“小团队内容工作流”。示例用户最值得出售的，不是泛泛的运营知识，而是把反复实践过的选题、排期和复盘方法，整理成一个足够小、可以验证的产品。</p></div></div>
 <div class="decision"><div><small>目标人群</small><b>持续发布内容、但协作流程混乱的小团队负责人</b></div><div><small>第一版形式</small><b>图文指南 + 排期模板 + 一次反馈</b></div><div><small>明确边界</small><b>先解决一周排期与复盘，不包含代运营和长期陪跑</b></div></div>
 
-<section class="section"><div class="section-head"><span class="num">01</span><h2>第一版产品，具体长什么样</h2><span class="en">FIRST PRODUCT</span></div><div class="facts"><div class="fact"><small>典型使用场景</small><h3>多人协作，却经常临时赶稿</h3><p>选题散落、责任不清、进度不可见，团队每周都在重复救火。</p></div><div class="fact"><small>带来什么结果</small><h3>完成一周内容排期与复盘</h3><p>明确本周发什么、谁来做、什么时候完成，以及下周怎样调整。</p></div><div class="fact"><small>核心交付</small><h3>一份图文工作流指南</h3><p>把已经验证过的操作步骤整理成可直接照做的最小流程。</p></div><div class="fact"><small>落地保障</small><h3>排期模板 + 一次反馈</h3><p>帮助用户完成第一次实践，并收集影响执行的真实卡点。</p></div></div></section>
+<div class="group-head"><span class="group-index">一、</span><span class="group-title">产品构想</span><span class="group-desc">先看你要做什么</span></div><section class="section"><div class="section-head"><span class="num">01</span><h2>第一版产品，具体长什么样</h2><span class="en">FIRST PRODUCT</span></div><div class="facts"><div class="fact"><small>典型使用场景</small><h3>多人协作，却经常临时赶稿</h3><p>选题散落、责任不清、进度不可见，团队每周都在重复救火。</p></div><div class="fact"><small>带来什么结果</small><h3>完成一周内容排期与复盘</h3><p>明确本周发什么、谁来做、什么时候完成，以及下周怎样调整。</p></div><div class="fact"><small>核心交付</small><h3>一份图文工作流指南</h3><p>把已经验证过的操作步骤整理成可直接照做的最小流程。</p></div><div class="fact"><small>执行支持</small><h3>排期模板 + 一次反馈</h3><p>帮助用户完成第一次实践，并收集影响执行的真实卡点。</p></div></div></section>
 
 <section class="section"><div class="section-head"><span class="num">02</span><h2>这条产品路径，分成四步</h2><span class="en">DELIVERY PATH</span></div><div class="steps"><div class="step"><b>01</b><h3>看清现状</h3><p>盘点渠道、角色和更新频率，找到最常卡住的一环。</p></div><div class="step"><b>02</b><h3>汇总选题</h3><p>把灵感和用户问题放到一个入口，减少散落。</p></div><div class="step"><b>03</b><h3>排出一周</h3><p>明确选题、写作、审核与发布的责任和时间。</p></div><div class="step"><b>04</b><h3>完成复盘</h3><p>记录完成情况与协作卡点，调整下一周安排。</p></div></div><div class="scope"><div class="include">第一版包含｜现状盘点、图文指南、排期模板和一次反馈，形成最小闭环。</div><div class="exclude">第一版暂不包含｜替团队制作内容、持续代运营、完整管理系统和长期陪跑。</div></div></section>
 
-<section class="section"><div class="section-head"><span class="num">03</span><h2>你已经拥有的证据与资产</h2><span class="en">EXPERIENCE ASSETS</span></div><div class="assets"><div class="asset"><small>可复用经验 · 技能阶段</small><h3>内容协作流程</h3><p>在 3 个项目中搭建过选题、排期和复盘流程。</p></div><div class="asset"><small>需求线索 · 尚待验证</small><h3>同行主动请教</h3><p>有人曾询问如何减少临时赶稿，但尚未验证独立付费。</p></div><div class="asset"><small>个人偏好 · 用户自述</small><h3>喜欢梳理与优化</h3><p>偏好沉淀文档和工具，不愿承担高频沟通。</p></div><div class="asset"><small>现实边界 · 当前条件</small><h3>每周投入 4 小时</h3><p>希望轻量起步，并逐步积累内容与口碑。</p></div></div><p class="intro" style="margin-top:12px">示例用户喜欢写内容、做产品和研究工具；排斥长期一对一与重复代执行。当前更适合用标准化资产承接多数用户，只保留一次有边界的反馈。</p></section>
+<div class="group-head"><span class="group-index">二、</span><span class="group-title">判断依据</span><span class="group-desc">再看为什么选它</span></div><section class="section"><div class="section-head"><span class="num">03</span><h2>你已经拥有的证据与资产</h2><span class="en">EXPERIENCE ASSETS</span></div><div class="assets"><div class="asset"><small>可复用经验 · 技能阶段</small><h3>内容协作流程</h3><p>在 3 个项目中搭建过选题、排期和复盘流程。</p></div><div class="asset"><small>需求线索 · 尚待验证</small><h3>同行主动请教</h3><p>有人曾询问如何减少临时赶稿，但尚未验证独立付费。</p></div><div class="asset"><small>个人偏好 · 用户自述</small><h3>喜欢梳理与优化</h3><p>偏好沉淀文档和工具，不愿承担高频沟通。</p></div><div class="asset"><small>现实边界 · 当前条件</small><h3>每周投入 4 小时</h3><p>希望轻量起步，并逐步积累内容与口碑。</p></div></div><p class="intro" style="margin-top:12px">示例用户喜欢写内容、做产品和研究工具；排斥长期一对一与重复代执行。当前更适合用标准化资产承接多数用户，只保留一次有边界的反馈。</p></section>
 
-<section class="section"><div class="section-head"><span class="num">04</span><h2>为什么先选这条方向</h2><span class="en">COMPARE &amp; CHOOSE</span></div><div class="table-scroll"><table class="table"><thead><tr><th>候选方向</th><th>能力与需求证据</th><th>与你的偏好匹配</th><th>当前建议</th></tr></thead><tbody><tr class="chosen"><td>小团队内容工作流</td><td>流程有重复实践；同行曾主动请教</td><td>喜欢梳理方法；交付可控制边界</td><td>优先验证</td></tr><tr><td>公众号写作咨询</td><td>有持续写作经验；存在零散咨询</td><td>喜欢写作；不愿高频改稿</td><td>保留候选</td></tr><tr><td>企业内容代运营</td><td>有项目交付经验</td><td>长期沟通和重复执行不匹配</td><td>暂不优先</td></tr></tbody></table></div><div class="choice-note">当前判断：第一阶段先验证工作流指南；写作能力作为内容支撑，代运营经验只作为能力依据。</div></section>
+<section class="section"><div class="section-head"><span class="num">04</span><h2>为什么先选这条方向</h2><span class="en">COMPARE &amp; CHOOSE</span></div><div class="table-scroll"><table class="table"><thead><tr><th>候选方向</th><th>能力与需求证据</th><th>与你的偏好匹配</th><th>当前建议</th></tr></thead><tbody><tr class="chosen"><td>小团队内容工作流</td><td>流程有重复实践；同行曾主动请教</td><td>喜欢梳理方法；交付可控制边界</td><td><span class="tag">优先验证</span></td></tr><tr><td>公众号写作咨询</td><td>有持续写作经验；存在零散咨询</td><td>喜欢写作；不愿高频改稿</td><td>保留候选</td></tr><tr><td>企业内容代运营</td><td>有项目交付经验</td><td>长期沟通和重复执行不匹配</td><td>暂不优先</td></tr></tbody></table></div><div class="choice-note"><b>当前判断：</b>第一阶段先验证工作流指南；写作能力作为内容支撑，代运营经验只作为能力依据。</div></section>
 
-<section class="section"><div class="section-head"><span class="num">05</span><h2>下一步，只验证这件事</h2><span class="en">MINIMUM VALIDATION</span></div><div class="flow"><div class="row"><small>邀请｜第 1–2 天</small><div><h3>联系 3–5 位小团队负责人</h3><p>询问最近一次临时赶稿的真实经历、已有做法和解决成本。</p></div></div><div class="row"><small>访谈｜第 3–5 天</small><div><h3>记录重复出现的卡点</h3><p>保留用户原话，分清实际困难和对设想的礼貌认同。</p></div></div><div class="row"><small>样稿｜第 6 天</small><div><h3>制作一个最小章节和模板</h3><p>只处理出现最集中的一个环节，不制作完整产品。</p></div></div><div class="row"><small>判断｜获得反馈后</small><div><h3>决定保留、缩小或调整</h3><p>观察用户是否愿意试用、付费，以及样稿是否推动真实行动。</p></div></div></div><div class="signal"><div class="go">值得继续｜多位匹配用户独立提到相似问题，愿意尝试样稿并讨论实际付费。</div><div class="adjust">需要调整｜只有泛泛认可，问题并不紧迫，或必须大量定制才能产生结果。</div></div></section>
+<div class="group-head"><span class="group-index">三、</span><span class="group-title">验证行动</span><span class="group-desc">最后看下一步怎么做</span></div><section class="section"><div class="section-head"><span class="num">05</span><h2>下一步，只验证这件事</h2><span class="en">MINIMUM VALIDATION</span></div><div class="flow"><div class="row"><small>邀请｜第 1–2 天</small><div><h3>联系 3–5 位小团队负责人</h3><p>询问最近一次临时赶稿的真实经历、已有做法和解决成本。</p></div></div><div class="row"><small>访谈｜第 3–5 天</small><div><h3>记录重复出现的卡点</h3><p>保留用户原话，分清实际困难和对设想的礼貌认同。</p></div></div><div class="row"><small>样稿｜第 6 天</small><div><h3>制作一个最小章节和模板</h3><p>只处理出现最集中的一个环节，不制作完整产品。</p></div></div><div class="row"><small>判断｜获得反馈后</small><div><h3>决定保留、缩小或调整</h3><p>观察用户是否愿意试用、付费，以及样稿是否推动真实行动。</p></div></div></div><div class="signal"><div class="go">值得继续｜多位匹配用户独立提到相似问题，愿意尝试样稿并讨论实际付费。</div><div class="adjust">需要调整｜只有泛泛认可，问题并不紧迫，或必须大量定制才能产生结果。</div></div></section>
 
-<section class="section"><div class="section-head"><span class="num">06</span><h2>现在可以发出的第一条消息</h2><span class="en">COPY &amp; SEND</span></div><div class="copy"><small>小范围邀请 · 根据当前证据阶段生成</small><p>最近我在整理一套小团队内容排期与复盘方法，想到你也负责过内容协作。我现在还不是在卖产品，想先了解真实情况：你们最近一次因为选题、进度或审核而临时赶稿，是在什么情况下？当时怎么解决，哪里仍然不满意？如果方便，我想和你聊 15 分钟。</p></div><div class="mini-grid"><div class="mini"><b>优先发给</b><ul><li>最近真实负责内容排期的人</li><li>曾主动请教过协作流程的人</li><li>愿意描述具体经历的人</li></ul></div><div class="mini"><b>发出后记录</b><ul><li>问题原话与发生场景</li><li>已有做法和实际成本</li><li>未解决部分与反对意见</li></ul></div></div></section>
+<section class="section"><div class="section-head"><span class="num">06</span><h2>现在可以发出的第一条消息</h2><span class="en">COPY &amp; SEND</span></div><div class="copy"><small>小范围邀请 · 根据当前证据阶段生成</small><span class="copy-note">可直接复制 · 修改称呼和细节后发送</span><p>最近我在整理一套小团队内容排期与复盘方法，想到你也负责过内容协作。我现在还不是在卖产品，想先了解真实情况：你们最近一次因为选题、进度或审核而临时赶稿，是在什么情况下？当时怎么解决，哪里仍然不满意？如果方便，我想和你聊 15 分钟。</p></div><div class="mini-grid"><div class="mini"><b>优先发给</b><ul><li>最近真实负责内容排期的人</li><li>曾主动请教过协作流程的人</li><li>愿意描述具体经历的人</li></ul></div><div class="mini"><b>发出后记录</b><ul><li>问题原话与发生场景</li><li>已有做法和实际成本</li><li>未解决部分与反对意见</li></ul></div></div></section>
 
-<section class="section evidence-section"><div class="section-head"><span class="num">07</span><h2>哪些已经成立，哪些仍需验证</h2><span class="en">EVIDENCE &amp; HANDOFF</span></div><div class="evidence"><div><b>问题需求证据</b><p>有人主动请教，但问题紧迫性和付费意愿仍需访谈验证。</p></div><div><b>提供者能力证据</b><p>在多个项目中重复搭建过内容协作流程。</p></div><div><b>当前产品形式证据</b><p>指南与模板是当前假设，尚未验证独立完成率。</p></div><div><b>带反馈回来判断</b><p>重复卡点、试用结果、付费反应，以及交付成本是否可控。</p></div></div><div class="takeaway"><small>你的第一步</small><b>先验证问题，不急着制作完整产品。</b><p>联系 3–5 位匹配用户，了解最近一次真实协作混乱和现有解决成本。</p></div></section>
-
-<div class="cta"><div class="cta-main"><div class="kicker">方向已经清楚，下一步难的是把访谈结果变成可验证的产品</div><h3>既让用户愿意行动，也不让自己掉进长期代执行。</h3><p>如果你不确定该怎样从反馈中提炼核心问题、划定第一版交付边界，可以带着真实访谈记录，进一步梳理最小产品和验证标准。</p><p class="cta-proof">基于多次知识产品设计、私域发售和付费验证经验，帮你把模糊方向压缩成一套可执行的首版方案。</p><div class="topics"><span>诊断结构</span><span>交付边界</span><span>付费验证</span></div></div><div class="contact"><small>荔枝｜经验产品化一对一咨询</small><strong>lizstudy</strong></div></div><div class="footer"><span>荔枝 · 经验产品化起步助手</span><span>雾蓝灰编辑感 · 完整版预览</span></div></main></body></html>
+<section class="section first-step-section"><div class="takeaway"><small>你的第一步</small><b>先验证问题，不急着制作完整产品。</b><p>联系 3–5 位匹配用户，了解最近一次真实协作混乱和现有解决成本。</p></div></section><div class="next-path">
+  <!-- 示例采用“专栏优先”。正式报告必须根据 boundaries-and-handoff.md 判断主次；咨询优先时交换两张卡的内容与视觉层级。 -->
+  <div class="next-path-head"><div class="kicker">继续推进时，你可以选择</div><h3>按自己的卡点，选择一种支持方式。</h3></div><div class="path-grid">
+    <div class="path-primary">
+      <div class="path-label">更推荐｜如果你想按自己的节奏推进</div>
+      <h4>《职场人副业从 0–1 实践指南》</h4>
+      <p>如果你想自己补齐需求验证、咨询设计和定价方法，可以先看与当前卡点最相关的内容：</p>
+      <div class="chapter-list"><a href="https://xiaobot.net/post/270305ee-2f2c-4ce1-8ff2-0ade1084e285" target="_blank" rel="noopener noreferrer">第 12 篇：判断需求与付费意愿</a><a href="https://xiaobot.net/post/8ef64907-afc5-4a92-a009-108961c134cd" target="_blank" rel="noopener noreferrer">第 20–22 篇：设计一对一咨询流程</a><a href="https://www.xiaobot.net/post/1fbbafbe-aa82-4d96-9729-5e77a453aa93" target="_blank" rel="noopener noreferrer">第 25 篇：如何定价与涨价</a></div>
+      <a class="column-link" href="https://xiaobot.net/post/9d2450bf-7e9c-4ea6-941c-6dca38c46440" target="_blank" rel="noopener noreferrer">查看完整目录 ↗</a>
+    </div>
+    <div class="path-secondary">
+      <div class="path-label">如果你仍卡在个人取舍</div>
+      <h4>预约一次诊断咨询</h4>
+      <p>如果你仍有多个方向难以取舍，或不知道怎样结合自己的情况调整产品，可以预约一次一对一咨询。</p>
+      <div class="consult-entry">添加微信并备注「诊断」<strong>lizstudy</strong></div></div>
+  </div>
+</div>
+<div class="footer"><span>荔枝 · 经验产品化起步教练</span><span>雾蓝灰编辑感 · 完整版预览</span></div></main></body></html>
